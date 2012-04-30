@@ -322,7 +322,7 @@ app.get('/', function(req, res){
   res.send(fs.readFileSync('./views/leaflet.html', 'utf8'));
 });
 app.get('/sf_tile.jsonp', function(req, res){
-  res.send(fs.readFileSync('./views/sf_tile.jsonp', 'utf8'));
+  res.send(fs.readFileSync('./views/occupy_tile.jsonp', 'utf8'));
 });
 app.get('/tiles/:zoom/:col/:row', tile);
 
